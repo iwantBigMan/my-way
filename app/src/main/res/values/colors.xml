@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#3F51B5</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark_gray">#FF808080</color>">
+    <color name="light_gray">#FFD3D3D3</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="android_toggle_off">#6b4021</color>
+    <color name="red">#FF0000</color>
+    <color name="progress">#ffaf75</color>
+    <color name="blue">#0000FF</color>
+    <color name="darkcyan">#313131</color>
+    <color name="ol_button_color" >#335084</color>
+    <color name="LightGrey">#D3D3D3</color>
+    <color name="LightBlue">#ADD8E6</color>
+    <color name="Indigo">#4B0082</color>
+    <color name="DarkSlateBlue">#483D8B</color>
+    <color name="SteelBlue">#4682B4</color>
+    <color name="LimeGreen">#32CD32</color>
+    <color name="DarkSlateGray">#2F4F4F</color>
+    <color name="Teal">#008080</color>
+    <color name="material_dark">@color/material_grey_850</color>
+    <color name="RoyalBlue">#3f51b5</color>
+    <color name="GhostWhite">#E6E6E6</color>
+    <color name="DarkGray">#333742</color>
+    <color name="RedOrange">#F8470D</color>
+    <color name="LightBlack">#242831</color>
+    <color name="WhiteGray">#eff0f3</color>
+    <color name="Yellow">#FAF58C</color>
+    <color name="gray">#808080</color>
+    <color name="brown">#964B00</color>
+
+    <color name="SideCloseBackground">#d7d7d7</color>
+    <color name="MenuTopBackground">#00005D</color>
+
+    <color name="SideLineColor">#e2e2e2</color>
+    <color name="SideBackgroundDark">#242424</color>
+    <color name="ModifiedColor">#ff4c00</color>
+    <color name="ModifiedColor2">#ff0000</color>
+    <color name="bnt_bakcColor">#cfd5ee</color>
+    <color name="CallCenterColor">#ff4c00</color>
+    <color name="CallCenterColor2">#ff0000</color>
+    <color name= "darkRed">#990000</color>
+    <color name= "commisionRed">#FF2323</color>
+
+    <color name="D_bordersColor">#aeabc2</color>
+
+    <color name="D_save_color">#3854cf</color>
+    <color name="D_save_color2">#09218b</color>
+
+    <color name="tab_on">#2da2cf</color>
+    <color name="tab_off">#113e4f</color>
+
+    <color name="textColor">#333333</color>
+
+    <color name="popupTopBackgroundColor">#e4f4fa</color>
+    <color name="popupCellBackgroundColor">#d4dbf0</color>
+    <color name="popupCellHoverColor">#5e7cff</color>
+
+    <color name="backgroundColor">#e4f4fa</color>
+    <color name="search_save_background">#3854cf</color>
+    <color name="search_save_background2">#09218b</color>
+
+    <color name="area_select_item_background">#6f7ea8</color>
+    <color name="area_select_item_background2">#d4dbf0</color>
+
+    <color name="search_cndition_btn_background">#5e7cff</color>
+    <color name="search_cndition_btn_background2">#e4f4fa</color>
+    <color name="cartype_all_background">#414d70</color>
+    <color name="cartype_all_background2">#8da6f2</color>
+
+    <color name="line_background">#aeabc2</color>
+    <color name="line_background_v2">#AFACC1</color>
+
+    <color name="order_complet_background">#161138</color>
+    <color name="order_complet_background2">#2e2378</color>
+
+
+    <color name="smart_name_change_background">#457080</color>
+    <color name="smart_name_change_background2">#5e7cff</color>
+
+    <color name="smart_d_cancel_btn_background2">#979bad</color>
+
+    <color name="smart_d_c_btn_background">#5e7cff</color>
+
+    <color name="smart_btn_background2">#805e7cff</color>
+    <color name="smart_bnt_background">#00ffffff</color>
+
+    <color name="smart_btn_block_background">#35000000</color>
+    <color name="topColor">#34485e</color>
+
+    <color name="toolbar_bg">#d9d9d9</color>
+    <color name="tabTextColor">#bbbbbb</color>
+    <color name="summarygray">#5a595b</color>
+    <color name="light_red">#FDD8D8</color>
+
+    <color name="order_list_sort_dropdown_active_item_background_color">#FFFADF</color>
+    <color name="light_sky_blue">#DEF6FB</color>
+
+    <color name="btn_allocate">#063962</color>
+    <color name="btn_allocate_pressed">#009962</color>
+
+    <color name="btic_click" >#29922c</color>
+    <color name="btic_menu" >#ECFFED</color>
+    <color name="btic_back" >#EFFFEF</color>
+    <color name="btic" >#bdbdbd</color>
+
+    <color name="fee_color">#0B3281</color>
+
+
+    <color name="google_black">#8A000000</color>
+</resources>
