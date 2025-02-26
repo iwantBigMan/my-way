@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".presentation.view.friends.FriendsFragment">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="12dp">
+
+      <androidx.appcompat.widget.AppCompatImageView
+          android:id="@+id/profileImage"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:scaleType="centerCrop"
+          android:src="@drawable/ic_profile_placeholder"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          app:layout_constraintStart_toEndOf="@id/profileImage"
+          app:layout_constraintTop_toTopOf="@id/profileImage"
+          app:layout_constraintBottom_toBottomOf="@id/profileImage"
+          android:layout_marginStart="12dp">
+
+          <!-- 친구 이름 -->
+          <TextView
+              android:id="@+id/NickName"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="내 이름"
+              android:textSize="16sp"
+              android:textStyle="bold"
+              android:textColor="@color/black" />
+
+          <!-- 상태 메시지 -->
+          <TextView
+              android:id="@+id/statusMessage"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="상태 메시지 표시"
+              android:textSize="14sp"
+              android:textColor="@color/gray" />
+      </LinearLayout>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewFriends"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        tools:listitem="@layout/friends_item" />
+
+</LinearLayout>

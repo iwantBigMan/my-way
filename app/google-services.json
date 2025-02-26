@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "85624277913",
+    "project_id": "sideappdatabase",
+    "storage_bucket": "sideappdatabase.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85624277913:android:df19820e13318a5443a108",
+        "android_client_info": {
+          "package_name": "com.hyeon.side.sideapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "85624277913-4eejqt853tg5g84at69gg0rddrnat78m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hyeon.side.sideapp",
+            "certificate_hash": "db1abfd0f78c154087fd95cb3c31603877e8eb00"
+          }
+        },
+        {
+          "client_id": "85624277913-e5irs6puevdbprg5beic43c9kih35528.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdNLnVabUK0IWT-p0KUddXF7rFTUS_BjY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "85624277913-e5irs6puevdbprg5beic43c9kih35528.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

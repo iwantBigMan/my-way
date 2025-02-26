@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">sideApp</string>
+    <string name="hintId">아이디를 입력하세요</string>
+    <string name="default_web_client_id">85624277913-e5irs6puevdbprg5beic43c9kih35528.apps.googleusercontent.com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="email_domains">
+        <item>직접 입력</item>
+        <item>naver.com</item>
+        <item>gmail.com</item>
+        <item>hanmail.net</item>
+        <item>daum.net</item>
+        <item>kakao.com</item>
+        <item>nate.com</item>
+    </string-array>
+
+</resources>
