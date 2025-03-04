@@ -28,7 +28,7 @@ class ChatAdapter(private var chatList: List<ChatData>, private val currentUser:
     override fun onBindViewHolder(holder: ChatViewHolder, position: Int) {
         val chat = chatList[position]
 
-        if (chat.name == currentUser) {
+        if (chat.receiverId == currentUser) {
             // 내가 보낸 메시지
             holder.sentMessageLayout.visibility = View.VISIBLE
             holder.receivedMessageLayout.visibility = View.GONE

@@ -1,5 +1,6 @@
 package com.hyeon.side.sideapp.presentation.view.friends
 
+import android.app.Dialog
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,6 +9,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.hyeon.side.sideapp.R
 import com.hyeon.side.sideapp.presentation.adapter.FriendsListAdapter
 import com.hyeon.side.sideapp.databinding.FragmentFriendsBinding
 import com.hyeon.side.sideapp.presentation.view.chat.ChatActivity
@@ -39,6 +41,15 @@ class FriendsFragment : Fragment() {
         binding.NickName.text = userNickname
     }
 
+    override fun onResume() {
+        super.onResume()
+        binding.addFriend.setOnClickListener {
+            val dialog = Dialog(requireContext())
+            dialog.setContentView(R.layout.fragment_friends_add_dialog)
+            dialog.show()
+        }
+    }
+
     private fun setupRecyclerView() {
         val adapter = FriendsListAdapter(emptyList()) { friend ->
             val intent = Intent(activity, ChatActivity::class.java).apply {
@@ -61,4 +72,5 @@ class FriendsFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+
 }

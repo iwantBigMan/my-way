@@ -12,7 +12,10 @@ import kotlinx.coroutines.launch
 
 class ChatViewModel(private val userId: String, private val friendId: String) : ViewModel() {
     private val db = FirebaseFirestore.getInstance()
-    private val chatCollection = db.collection("users").document(userId).collection("chats")
+    private val chatCollection =
+        db.collection("users")
+        .document(userId).collection("friends")
+        .document(friendId).collection("chat")
 
     private val _chatList = MutableLiveData<List<ChatData>>()
     val chatList: LiveData<List<ChatData>> = _chatList

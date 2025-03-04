@@ -52,6 +52,14 @@
       </LinearLayout>
 
   </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/addFriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:src="@drawable/baseline_person_add_alt_1_24"
+        android:layout_marginEnd="25dp"
+        />
 
 
     <androidx.recyclerview.widget.RecyclerView

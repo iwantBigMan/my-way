@@ -1,4 +1,3 @@
-// AppModule.kt
 package com.hyeon.side.sideapp.di
 
 import com.google.firebase.auth.FirebaseAuth
@@ -6,8 +5,10 @@ import com.google.firebase.firestore.FirebaseFirestore
 import com.hyeon.side.sideapp.domain.usecase.auth.AuthUseCase
 import com.hyeon.side.sideapp.data.repository.AuthRepositoryImpl
 import com.hyeon.side.sideapp.data.repository.FriendsRepositoryImpl
+import com.hyeon.side.sideapp.data.repository.UserRepositoryImpl
 import com.hyeon.side.sideapp.domain.repository.AuthRepository
 import com.hyeon.side.sideapp.domain.repository.FriendsRepository
+import com.hyeon.side.sideapp.domain.repository.UserRepository
 import com.hyeon.side.sideapp.domain.usecase.friend.GetFriendsListUseCase
 import dagger.Binds
 import dagger.Module
@@ -32,6 +33,12 @@ abstract class AppModule {
         friendsRepositoryImpl: FriendsRepositoryImpl
     ): FriendsRepository
 
+    @Binds
+    @Singleton
+    abstract fun bindUserRepository(
+        userRepositoryImpl: UserRepositoryImpl
+    ): UserRepository
+
     companion object {
         @Provides
         @Singleton
@@ -55,6 +62,12 @@ abstract class AppModule {
         @Singleton
         fun provideFirebaseFirestore(): FirebaseFirestore {
             return FirebaseFirestore.getInstance()
+        }
+
+        @Provides
+        @Singleton
+        fun provideUserRepository(firestore: FirebaseFirestore): UserRepository {
+            return UserRepositoryImpl(firestore)
         }
     }
 }
