@@ -41,14 +41,13 @@ class FriendsFragment : Fragment() {
         binding.NickName.text = userNickname
     }
 
-    override fun onResume() {
-        super.onResume()
-        binding.addFriend.setOnClickListener {
-            val dialog = Dialog(requireContext())
-            dialog.setContentView(R.layout.fragment_friends_add_dialog)
-            dialog.show()
-        }
-    }
+  override fun onResume() {
+      super.onResume()
+      binding.addFriend.setOnClickListener {
+          val dialog = FriendsAddDialogFragment()
+          dialog.show(parentFragmentManager, "FriendsAddDialogFragment")
+      }
+  }
 
     private fun setupRecyclerView() {
         val adapter = FriendsListAdapter(emptyList()) { friend ->
@@ -72,5 +71,4 @@ class FriendsFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
-
 }

@@ -10,6 +10,7 @@ import com.hyeon.side.sideapp.domain.repository.AuthRepository
 import com.hyeon.side.sideapp.domain.repository.FriendsRepository
 import com.hyeon.side.sideapp.domain.repository.UserRepository
 import com.hyeon.side.sideapp.domain.usecase.friend.GetFriendsListUseCase
+import com.hyeon.side.sideapp.domain.usecase.user.UserUseCase
 import dagger.Binds
 import dagger.Module
 import dagger.Provides
@@ -54,6 +55,12 @@ abstract class AppModule {
 
         @Provides
         @Singleton
+        fun provideUserRepository(userRepository: UserRepository): UserUseCase {
+            return UserUseCase(userRepository)
+        }
+
+        @Provides
+        @Singleton
         fun provideFirebaseAuth(): FirebaseAuth {
             return FirebaseAuth.getInstance()
         }
@@ -62,12 +69,6 @@ abstract class AppModule {
         @Singleton
         fun provideFirebaseFirestore(): FirebaseFirestore {
             return FirebaseFirestore.getInstance()
-        }
-
-        @Provides
-        @Singleton
-        fun provideUserRepository(firestore: FirebaseFirestore): UserRepository {
-            return UserRepositoryImpl(firestore)
         }
     }
 }

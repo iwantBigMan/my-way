@@ -9,12 +9,11 @@ import javax.inject.Inject
 class UserRepositoryImpl @Inject constructor(
     private val firestore: FirebaseFirestore
 ) : UserRepository {
-
-    override suspend fun getUserData(userId: String): List<User> {
+    override suspend fun getAllUsers(): List<User> {
         return try {
             val snapshot = firestore.collection("users")
                 .get()
-                .await()  // 비동기 처리
+                .await()
             snapshot.documents.mapNotNull { it.toObject(User::class.java) }
         } catch (e: Exception) {
             emptyList()

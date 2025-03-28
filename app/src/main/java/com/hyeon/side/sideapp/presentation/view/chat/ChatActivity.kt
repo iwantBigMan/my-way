@@ -20,7 +20,6 @@ class ChatActivity : AppCompatActivity() {
     private val chatViewModel: ChatViewModel by viewModels {
         ChatViewModelFactory(
             userId, friendId
-
         )
     }
 
